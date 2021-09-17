@@ -1,6 +1,7 @@
 let image = document.querySelectorAll('.slider_img img');
 let elBtnPrev = document.querySelector('.btnPrev');
 let elBtnNext = document.querySelector('.btnNext');
+let slider = document.querySelector('.slider');
 
 let i = 0;
 
@@ -39,3 +40,31 @@ function hello() {
 // let fun = setInterval(hello, 1000); 
 
 // clearInterval(fun);
+function sliderNext(){
+    image[i].style.display = 'none';
+
+    i++;
+    if(i >= image.length){
+        i = 0;
+    }
+    image[i].style.display = 'block';
+    console.log(i); // test log
+}
+
+let int = setInterval(sliderNext, 1000);
+
+function start(){
+    return int = setInterval(sliderNext, 1000);
+}
+
+function stop(){
+    clearInterval(int);
+}
+
+slider.onmouseover = function(){
+    stop();
+}
+
+slider.onmouseout = function(){
+    start();
+}
