@@ -6,15 +6,15 @@ window.onload = function(){
     // }
 
     // text.onclick = function(){
-    //     text.style.color = "green";
+    //     text.style.color = "blue";
     // }
 
-    text.addEventListener('click', bgColor);
-    text.addEventListener('click', color);
 
+    text.addEventListener('click',bgColor);
+    text.addEventListener('click',color);
 
     function bgColor(){
-        text.style.background = 'red';
+            text.style.background = 'red';
     }
 
     function color(){
