@@ -8,7 +8,7 @@ window.addEventListener('load',function(){
 
     function slider(btnNext,btnPrev,images){
 
-        this.next  = document.querySelector(btnNext);
+        this.next = document.querySelector(btnNext);
         this.prev  = document.querySelector(btnPrev);
         this.img = document.querySelectorAll(images);
         this.i = 0;
