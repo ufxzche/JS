@@ -55,7 +55,7 @@ window.addEventListener('load',function(){
     
     let monster1 = new Monster(100,5);
     let monster2 = new Monster(120,4);
-    let monster3 = new Monster(80,7);
+    let monster3 = new Monster(80,7);   
     // console.log(monster1);
     // console.log(monster2);
     // console.log(monster3);
