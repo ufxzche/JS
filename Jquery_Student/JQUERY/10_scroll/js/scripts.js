@@ -18,4 +18,19 @@ $(document).ready(function () {
             scrollTop: target
         }, 1000)
     })
+
+    $(window).scroll(function(){
+        let scroll = $(this).scrollTop();
+        console.log(scroll);
+
+        $link.each(function(){
+            var target = $(this).attr('href');
+            var selector = $(target).offset().top - 60;
+
+            if(scroll >= selector){
+                $link.removeClass('active');
+                $(this).addClass('active');
+            }
+        })
+    })
 });
