@@ -107,7 +107,7 @@ Form
 .form fieldset .select.input-cart-number {
   width: 82px;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 7px;
 }
 .form fieldset input.input-cart-number:last-child,
 .form fieldset .select.input-cart-number:last-child {
@@ -191,6 +191,11 @@ Credit Card
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
+.credit-card-box-active {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 .credit-card-box .front,
 .credit-card-box .back {
   width: 400px;
