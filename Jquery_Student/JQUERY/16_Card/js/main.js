@@ -26,7 +26,9 @@ $(document).ready(function () {
     $('#card-ccv').on('focus', function(){
         $('.credit-card-box .flip').addClass('credit-card-box-active');
     })
-
+    $('#card-ccv').on('blur', function(){
+        $('.credit-card-box .flip').removeClass('credit-card-box-active');
+    })
     $('#card-ccv').on('input', function(){
         $('.ccv div').html($(this).val());
     })
